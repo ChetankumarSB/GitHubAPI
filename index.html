@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GitHub User Search</title>
+    <!-- Link to the Tailwind CSS framework -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css">
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <!-- Title -->
+      <h1 class="text-4xl text-center mt-8 mb-4">GitHub User Search</h1>
+      <!-- Input field and search button -->
+      <div class="flex justify-center mb-4">
+        <input type="text" id="search-input" class="border-2 border-gray-300 p-2 w-full" placeholder="Enter GitHub username">
+        <button id="search-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-2">Search</button>
+      </div>
+      <!-- User info section (hidden by default) -->
+      <div id="user-info" class="hidden">
+        <div class="flex justify-center mb-4 bg-gray-200">
+        <div class="flex items-center mb-4">
+          <img id="avatar" class="w-20 h-20 mr-4" src="">
+          <h2 id="username" class="text-2xl"></h2>
+        </div>
+          <div class="mb-4">
+            <p id="login"></p>
+            <p id="repo-count"></p>
+            <p id="bio"></p>
+            <p id="following"></p>
+            <p id="followers"></p>
+            <p id="location"></p>
+            <p id="created-at"></p>
+            <p id="updated-at"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
